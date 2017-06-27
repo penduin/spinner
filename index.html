@@ -1,0 +1,41 @@
+<html>
+  <head>
+	<title>spinner</title>
+	<style>
+	  body {
+	  background: black;
+	  color: white;
+	  }
+	  .spinner {
+	  display: inline-block;
+	  animation-duration: 1s;
+	  animation-iteration-count: infinite;
+	  animation-name: spin;
+	  animation-timing-function: linear;
+	  }
+	  .spinner.hidden {
+	  opacity: 0;
+	  }
+	  @keyframes spin {
+	  from {
+	  transform: rotate(0deg);
+	  }
+	  to {
+	  transform: rotate(360deg);
+	  }
+	  }
+	</style>
+  </head>
+  <body>
+	<span class="spinner">(&nbsp;&nbsp;&nbsp;)</span>
+	Loading...
+	<hr>
+	thinking...
+	<span class="spinner">(&nbsp;&nbsp;&nbsp;)</span>
+	<hr>
+	doing stuff...
+	<span class="spinner">|</span>
+	<script>
+	</script>
+  </body>
+</html>
